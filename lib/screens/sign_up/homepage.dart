@@ -41,8 +41,8 @@ class _HomePageState extends State<HomePage> {
         ),
         child: BottomNavigationBar(
           backgroundColor:
-              Colors.transparent, // Keeps the transparency from Container
-          elevation: 0, // Removes the default shadow
+              Colors.transparent, 
+          elevation: 0, 
           currentIndex: currentIndex,
           // selectedItemColor: purplish,
           fixedColor: purplish,

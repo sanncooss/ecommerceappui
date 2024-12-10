@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               Get.bottomSheet(
                 Container(
-                  decoration: BoxDecoration(
+                  decoration:const BoxDecoration(
                     color: Colors.purple,
                     borderRadius:
                         BorderRadius.vertical(top: Radius.circular(20)),

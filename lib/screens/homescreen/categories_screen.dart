@@ -21,14 +21,14 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         onTap: () {
         },
         child: Padding(
-          padding: EdgeInsets.all(20),
-          child: Container(
+          padding: const EdgeInsets.all(20),
+          child: SizedBox(
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 sizedBox,
-                BackButtonn(),
+               const BackButtonn(),
                 sizedBox,
                 Text(
                   'Shop by categories',
