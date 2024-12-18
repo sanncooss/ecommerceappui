@@ -18,8 +18,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GestureDetector(
-        onTap: () {
-        },
+        onTap: () {},
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: SizedBox(
@@ -28,7 +27,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 sizedBox,
-               const BackButtonn(),
+                const BackButtonn(),
                 sizedBox,
                 Text(
                   'Shop by categories',
@@ -47,12 +46,12 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                           onTap: () {
                             Get.toNamed(
                               RouteNames.categoryItemScreen,
-                              arguments: Category.list[i], 
+                              arguments: Category.list[i],
                             );
                           },
                           child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(50),
                               color: const Color.fromARGB(255, 225, 225, 225),
                             ),
                             width: double.infinity,
@@ -63,7 +62,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               children: [
                                 const SizedBox(width: 20),
                                 ClipRRect(
-                                  borderRadius: BorderRadius.circular(20),
+                                  borderRadius: BorderRadius.circular(60),
                                   child: Image.asset(Category.list[i].imageUrl),
                                 ),
                                 const SizedBox(width: 20),

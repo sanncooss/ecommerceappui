@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               Get.bottomSheet(
                 Container(
-                  decoration:const BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.purple,
                     borderRadius:
                         BorderRadius.vertical(top: Radius.circular(20)),
@@ -155,19 +155,27 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10.0),
-                  child: TextField(
-                    controller: TextEditingController(),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search, color: black),
-                      filled: true,
-                      fillColor: grey,
-                      hintText: 'Search',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                        borderSide: BorderSide.none,
+                GestureDetector(
+                  onTap: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10.0),
+                    child: TextField(
+                      controller: TextEditingController(),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        prefixIcon: IconButton(
+                            onPressed: () {
+                              Get.toNamed(RouteNames.shopby);
+                            },
+                            icon:
+                                const Icon(IconsaxPlusBroken.search_normal_1)),
+                        filled: true,
+                        fillColor: grey,
+                        hintText: 'Search',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(25),
+                          borderSide: BorderSide.none,
+                        ),
                       ),
                     ),
                   ),

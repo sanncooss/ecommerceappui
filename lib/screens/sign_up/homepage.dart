@@ -1,6 +1,7 @@
 import 'package:figma/screens/homescreen/homescreen.dart';
 import 'package:figma/screens/notifications/notificationspage.dart';
 import 'package:figma/screens/orders/orders_page.dart';
+import 'package:figma/screens/profile/profile_screen.dart';
 import 'package:figma/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
@@ -19,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     const HomeScreen(),
     const NotificationsPage(),
     const OrdersPage(),
+    const ProfileScreen()
   ];
 
   @override
@@ -40,9 +42,8 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         child: BottomNavigationBar(
-          backgroundColor:
-              Colors.transparent, 
-          elevation: 0, 
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           currentIndex: currentIndex,
           // selectedItemColor: purplish,
           fixedColor: purplish,

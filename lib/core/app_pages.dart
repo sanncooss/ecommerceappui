@@ -2,6 +2,7 @@ import 'package:figma/core/routenames.dart';
 import 'package:figma/screens/homescreen/categories_screen.dart';
 import 'package:figma/screens/orders/order_details.dart';
 import 'package:figma/screens/orders/orders_page.dart';
+import 'package:figma/screens/search/shopby.dart';
 import 'package:figma/screens/sign_up/homepage.dart';
 import 'package:figma/screens/homescreen/category_item.dart';
 import 'package:figma/screens/sign_up/details.dart';
@@ -33,5 +34,6 @@ class AppPages {
     GetPage(
         name: RouteNames.categoryItemScreen, page: () => const CategoryItem()),
     GetPage(name: RouteNames.orderDetails, page: () => const OrderDetails()),
+    GetPage(name: RouteNames.shopby, page: () => const ShopByCategories()),
   ];
 }

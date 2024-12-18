@@ -5,7 +5,6 @@ import 'package:figma/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:icon_icons/icon_icons.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -83,7 +82,7 @@ class _LoginPageState extends State<LoginPage> {
                 label: const Text('Continue'),
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
             Padding(
@@ -112,10 +111,12 @@ class _LoginPageState extends State<LoginPage> {
             ),
             sizedBox,
             sizedBox,
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 200,
               child: Column(
+                // mainAxisSize: Spacer(),
+
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
@@ -136,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            SizedBox(
+                           const SizedBox(
                               width: 10,
                             ),
                             Image.asset(
@@ -173,7 +174,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            SizedBox(
+                          const  SizedBox(
                               width: 10,
                             ),
                             Image.asset(
@@ -210,7 +211,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            SizedBox(
+                          const  SizedBox(
                               width: 10,
                             ),
                             Image.asset(
@@ -222,7 +223,9 @@ class _LoginPageState extends State<LoginPage> {
                             const Text(
                               'Continue with google',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
                             )
                           ],
                         ),
